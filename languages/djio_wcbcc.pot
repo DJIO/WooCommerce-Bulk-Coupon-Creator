@@ -1,6 +1,7 @@
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Bulk Coupon Creator v0.3\n"
+"Project-Id-Version: WooCommerce Bulk Coupon Creator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2012-06-21 04:13:59+0000\n"
@@ -10,101 +11,86 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-Language: Portuguese\n"
-"X-Poedit-Country: BRAZIL\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-Bookmarks: \n"
+"X-Poedit-Country: BRAZIL\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Language: Portuguese\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Textdomain-Support: yes\n"
 
 #: woocommerce-bulk-cupon-creator.php:65
-#@ djio_wcbcc
 msgid "Bulk Post Creator Plus"
-msgstr "Criador de Cupons em Massa"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:92
-#@ djio_wcbcc
 msgid "Click to toggle"
-msgstr "Clique para alternar"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:121
-#@ djio_wcbcc
 msgid "How many coupons do you want to create in this series?"
-msgstr "Quantos cupons você quer criar nesta série?"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:142
-#@ djio_wcbcc
-msgid "Do you want to setup pre/pos strings?<br />(if not, just leave it empty)"
-msgstr "Quer definir padrões pre/pos código?<br />(se não, basta deixar em branco)"
+msgid ""
+"Do you want to setup pre/pos strings?<br />(if not, just leave it empty)"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:179
-#@ djio_wcbcc
 msgid "Create Now"
-msgstr "Criar Agora"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:241
-#@ djio_wcbcc
 msgid "Created"
-msgstr "Criado"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:284
 #: woocommerce-bulk-cupon-creator.php:286
-#@ djio_wcbcc
 msgid "Settings"
-msgstr "Configurações"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:293
-#@ djio_wcbcc
 msgid "Bulk Coupon Creator"
-msgstr "Criador de Cupons em Massa"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:293
-#@ djio_wcbcc
 msgid "Create Bulk Coupon"
-msgstr "Criar Cupons em Massa"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:143
-#@ djio_wcbcc
 msgctxt "code placeholder"
 msgid "CODE"
-msgstr "CÓDIGO"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:146
-#@ djio_wcbcc
 msgid "Product ID"
-msgstr "ID do Produto"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:125
-#@ djio_wcbcc
 msgid "How many characters for the CODE?"
-msgstr "Quantos caracteres no CÓDIGO?"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:208
-#@ djio_wcbcc
-msgid "You need to provide a Product ID in the previous form, please go back and try again."
-msgstr "Você precisa fornecer um ID de Produto no formulário anterior, por favor volte a tente novamente."
+msgid ""
+"You need to provide a Product ID in the previous form, please go back and "
+"try again."
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:122
-#@ djio_wcbcc
 msgid "suggested max: 500"
-msgstr "máximo sugerido: 500"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:248
 #, php-format
-#@ djio_wcbcc
 msgid "All done! %1$d Coupons created for this product: <strong>%2$s</strong>"
-msgstr "Tudo feito! %1$d Cupons foram criados para o produto: <strong>%2$s</strong>"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:250
 #, php-format
-#@ djio_wcbcc
 msgid "<a href=\"%s\">See all Coupons &raquo;</a>"
-msgstr "<a href=\"%s\">Veja Todos os Cupons &raquo;</a>"
+msgstr ""
 
 #: woocommerce-bulk-cupon-creator.php:249
-#@ djio_wcbcc
 msgid "List in TXT format:"
-msgstr "Lista em formato TXT:"
-
+msgstr ""

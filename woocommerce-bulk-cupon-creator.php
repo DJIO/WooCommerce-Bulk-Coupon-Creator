@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce Bulk Coupon Creator
 Plugin URI: http://www.djio.com.br/woocommerce-bulk-coupon-creator/
 Description: This plugin creates coupon codes inside WooCommerce in bulk with few configuration options.
-Version: 0.2
+Version: 0.3
 Author: DJIO
 Author URI: http://www.djio.com.br/wordpress/
 
@@ -119,7 +119,7 @@ class WooCommerceBulkCouponCreator {
 		echo '<table style="text-align: left; padding: 10px 30px;">
 			<tr valign="top">
 				<th scope="row">'. __('How many coupons do you want to create in this series?', 'djio_wcbcc') .'</th>
-				<td><input type="text" name="coupon_quantity"  size="5" /> '. __('numbers only', 'djio_wcbcc') .'</td>
+				<td><input type="text" name="coupon_quantity"  size="5" /> '. __('suggested max: 500', 'djio_wcbcc') .'</td>
 			</tr>
 			<tr valign="top">
 				<th scope="row">'. __('How many characters for the CODE?', 'djio_wcbcc') .'</th>
@@ -127,10 +127,10 @@ class WooCommerceBulkCouponCreator {
 					<select id="code_size" name="code_size">
 						<option value="3">3</option>
 						<option value="4">4</option>
-						<option value="5" selected="selected">5</option>
+						<option value="5">5</option>
 						<option value="6">6</option>
 						<option value="7">7</option>
-						<option value="8">8</option>
+						<option value="8" selected="selected">8</option>
 						<option value="9">9</option>
 						<option value="10">10</option>
 						<option value="11">11</option>
@@ -215,6 +215,14 @@ class WooCommerceBulkCouponCreator {
 			
 			echo '<ul>'.PHP_EOL;
 			
+			// LOG
+			$time = date('Y-m-d_G-i-s');
+			$uploads = wp_upload_dir();
+			$filename = 'CODES_'.$time.'.txt';
+			$file_path =  $uploads['path'] . DIRECTORY_SEPARATOR .$filename;
+			$file_url =  $uploads['url'] . '/' .$filename;
+
+			// Loop
 			for ($i = 1; $i <= $count; $i++) 
 			{
 				$title = self::keygen($size, $pre, $pos);
@@ -227,6 +235,9 @@ class WooCommerceBulkCouponCreator {
 					update_post_meta( $new_draft_id, 'product_ids', $product_ids);
 					// update_post_meta( $new_draft_id, 'product_categories', $categories);
 
+					$code = $title ."\n";
+					file_put_contents($file_path, $code, FILE_APPEND | LOCK_EX);
+
 					echo '<li>'. __('Created', 'djio_wcbcc') . ' #' . $i . ': <a href="post.php?post='.$new_draft_id.'&action=edit">'.$title.'</a>'.PHP_EOL;
 					$sum++;
 				}
@@ -234,8 +245,9 @@ class WooCommerceBulkCouponCreator {
 		
 			echo '</ul>'.PHP_EOL;
 		
-			echo '<p>'. sprintf(__('All done! <a href="%s">See all Coupons &raquo;</a>', 'djio_wcbcc'), 'edit.php?post_type=shop_coupon') .'</p>'.PHP_EOL;
-			echo '<p>'. sprintf(__('%1$d Coupons created for this product: <strong>%2$s</strong>', 'djio_wcbcc'), $sum, $product_title) .'</p>'.PHP_EOL;
+			echo '<p><strong>'. sprintf(__('All done! %1$d Coupons created for this product: <strong>%2$s</strong>', 'djio_wcbcc'), $sum, $product_title) .'</strong></p>'.PHP_EOL;
+			echo '<p>'. __('List in TXT format:', 'djio_wcbcc').' <a href="'. $file_url .'" target="_blank">'. $filename .' &raquo;</a></p>'.PHP_EOL;
+			echo '<p>'. sprintf(__('<a href="%s">See all Coupons &raquo;</a>', 'djio_wcbcc'), 'edit.php?post_type=shop_coupon') .'</p>'.PHP_EOL;
 			
 		}
 	}
