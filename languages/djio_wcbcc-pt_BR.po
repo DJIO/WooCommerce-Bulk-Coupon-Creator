@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Bulk Coupon Creator v0.1\n"
+"Project-Id-Version: WooCommerce Bulk Coupon Creator v0.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2012-06-18 09:06:46+0000\n"
+"PO-Revision-Date: 2012-06-18 19:22:18+0000\n"
 "Last-Translator: DJIO <wordpress@djio.com.br>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -19,112 +19,87 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: woocommerce-bulk-cupon-creation.php:65
-#@ djio-wcbcc
+#: woocommerce-bulk-cupon-creator.php:65
+#@ djio_wcbcc
 msgid "Bulk Post Creator Plus"
 msgstr "Criador de Cupons em Massa"
 
-#: woocommerce-bulk-cupon-creation.php:67
-#, php-format
-#@ djio-wcbcc
-msgid "Thanks for using this plugin! If it works and you are satisfied with the results, Please <a href=\"%1$s\">Donate</a> to help us to continue support and development of this <i>free</i> software!"
-msgstr "Obrigado por usar este plugin! Se ele funciona, e você está satisfeito com os resultados, por favor <a href=\\\"%1$s\\\">Doe</a> para nos ajudar a continuar o suporte e desenvolvimento do software <i>livre</i>!"
-
-#: woocommerce-bulk-cupon-creation.php:75
-#@ djio-wcbcc
-msgid "About this Plugin:"
-msgstr "Sobre este Plugin:"
-
-#: woocommerce-bulk-cupon-creation.php:78
-#@ djio-wcbcc
-msgid "Plugin Homepage"
-msgstr "Website do Plugin"
-
-#: woocommerce-bulk-cupon-creation.php:80
-#@ djio-wcbcc
-msgid "Donate with PayPal"
-msgstr "Doar com PayPal"
-
-#: woocommerce-bulk-cupon-creation.php:91
-#@ djio-wcbcc
+#: woocommerce-bulk-cupon-creator.php:92
+#@ djio_wcbcc
 msgid "Click to toggle"
 msgstr "Clique para alternar"
 
-#: woocommerce-bulk-cupon-creation.php:120
-#@ djio-wcbcc
+#: woocommerce-bulk-cupon-creator.php:121
+#@ djio_wcbcc
 msgid "How many coupons do you want to create in this series?"
 msgstr "Quantos cupons você quer criar nesta série?"
 
-#: woocommerce-bulk-cupon-creation.php:124
-#@ djio-wcbcc
+#: woocommerce-bulk-cupon-creator.php:142
+#@ djio_wcbcc
 msgid "Do you want to setup pre/pos strings?<br />(if not, just leave it empty)"
 msgstr "Quer definir padrões pre/pos código?<br />(se não, basta deixar em branco)"
 
-#: woocommerce-bulk-cupon-creation.php:128
-#@ djio-wcbcc
-msgid "Coupon Status"
-msgstr "Status do Cupom"
-
-#: woocommerce-bulk-cupon-creation.php:131
-#@ djio-wcbcc
-msgid "Draft"
-msgstr "Rascunho"
-
-#: woocommerce-bulk-cupon-creation.php:132
-#@ djio-wcbcc
-msgid "Published"
-msgstr "Publicado"
-
-#: woocommerce-bulk-cupon-creation.php:137
-#@ djio-wcbcc
-msgid "Product Categories"
-msgstr "Categorias de Produtos"
-
-#: woocommerce-bulk-cupon-creation.php:139
-#@ djio-wcbcc
-msgid "Any category"
-msgstr "Qualquer Categoria"
-
-#: woocommerce-bulk-cupon-creation.php:155
-#@ djio-wcbcc
+#: woocommerce-bulk-cupon-creator.php:179
+#@ djio_wcbcc
 msgid "Create Now"
 msgstr "Criar Agora"
 
-#: woocommerce-bulk-cupon-creation.php:185
-#@ djio-wcbcc
+#: woocommerce-bulk-cupon-creator.php:230
+#@ djio_wcbcc
 msgid "Created"
 msgstr "Criado"
 
-#: woocommerce-bulk-cupon-creation.php:193
-#@ djio-wcbcc
-msgid "Total os Coupons created"
-msgstr "Total os Cupons criados"
-
-#: woocommerce-bulk-cupon-creation.php:227
-#: woocommerce-bulk-cupon-creation.php:229
-#@ djio-wcbcc
+#: woocommerce-bulk-cupon-creator.php:272
+#: woocommerce-bulk-cupon-creator.php:274
+#@ djio_wcbcc
 msgid "Settings"
 msgstr "Configurações"
 
-#: woocommerce-bulk-cupon-creation.php:192
+#: woocommerce-bulk-cupon-creator.php:237
 #, php-format
-#@ djio-wcbcc
+#@ djio_wcbcc
 msgid "All done! <a href=\"%s\">See all Coupons &raquo;</a>"
-msgstr "Tudo feito! <a href=\\\"%s\\\">Ver todos os Cupons &raquo;</a>"
+msgstr "Tudo feito! <a href=\"%s\">Ver todos os Cupons &raquo;</a>"
 
-#: woocommerce-bulk-cupon-creation.php:236
-#@ djio-wcbcc
+#: woocommerce-bulk-cupon-creator.php:281
+#@ djio_wcbcc
 msgid "Bulk Coupon Creator"
 msgstr "Criador de Cupons em Massa"
 
-#: woocommerce-bulk-cupon-creation.php:236
-#@ djio-wcbcc
+#: woocommerce-bulk-cupon-creator.php:281
+#@ djio_wcbcc
 msgid "Create Bulk Coupon"
 msgstr "Criar Cupons em Massa"
 
-#: woocommerce-bulk-cupon-creation.php:125
-#@ djio-wcbcc
+#: woocommerce-bulk-cupon-creator.php:143
+#@ djio_wcbcc
 msgctxt "code placeholder"
 msgid "CODE"
 msgstr "CÓDIGO"
+
+#: woocommerce-bulk-cupon-creator.php:146
+#@ djio_wcbcc
+msgid "Product ID"
+msgstr "ID do Produto"
+
+#: woocommerce-bulk-cupon-creator.php:122
+#@ djio_wcbcc
+msgid "numbers only"
+msgstr "somente os números"
+
+#: woocommerce-bulk-cupon-creator.php:125
+#@ djio_wcbcc
+msgid "How many characters for the CODE?"
+msgstr "Quantos caracteres no CÓDIGO?"
+
+#: woocommerce-bulk-cupon-creator.php:238
+#, php-format
+#@ djio_wcbcc
+msgid "%1$d Coupons created for this product: <strong>%2$s</strong>"
+msgstr "%1$d Coupons criados para este produto: <strong>%2$s</strong>"
+
+#: woocommerce-bulk-cupon-creator.php:208
+#@ djio_wcbcc
+msgid "You need to provide a Product ID in the previous form, please go back and try again."
+msgstr "Você precisa fornecer um ID de Produto no formulário anterior, por favor volte a tente novamente."
 
