@@ -145,6 +145,10 @@ class WooCommerceBulkCouponCreator {
 			<tr valign="top">
 				<th scope="row">'. __('Product ID', 'djio_wcbcc') .'</th>
 				<td><input type="text" name="product_ids"  size="7" /></td>
+			</tr>
+			<tr valign="top">
+				<th scope="row">% off</th>
+				<td><input type="number" name="coupon_code_discount" /> </td>
 			</tr>'.PHP_EOL; 
 			/*
 			<tr valign="top">
@@ -190,7 +194,11 @@ class WooCommerceBulkCouponCreator {
 				$size = $_POST['code_size'];
 			$pre = (isset($_POST['coupon_code_pre'])) ? $_POST['coupon_code_pre'] : '';
 			$pos = (isset($_POST['coupon_code_pos'])) ? $_POST['coupon_code_pos'] : '';
-			
+		
+			$discountPercentage = isset($_POST['coupon_code_discount'])
+				? $_POST['coupon_code_discount']
+				: 0;
+	
 			$product_title = '';
 			$product_ids = $_POST['product_ids'];
 			if ($product_ids) 
@@ -230,7 +238,7 @@ class WooCommerceBulkCouponCreator {
 				if ($new_draft_id = self::create_coupon($title, 'shop_coupon', $status)) 
 				{
 					update_post_meta( $new_draft_id, 'discount_type', 'percent_product' );
-					update_post_meta( $new_draft_id, 'coupon_amount', 100 );
+					update_post_meta( $new_draft_id, 'coupon_amount', $discountPercentage);
 					update_post_meta( $new_draft_id, 'usage_limit', 1 );
 					update_post_meta( $new_draft_id, 'product_ids', $product_ids);
 					// update_post_meta( $new_draft_id, 'product_categories', $categories);
