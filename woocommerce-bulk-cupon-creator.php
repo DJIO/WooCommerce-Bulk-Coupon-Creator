@@ -290,7 +290,7 @@ class WooCommerceBulkCouponCreator {
 	}
 	
 	static public function add_plugin_menu() {
-		add_posts_page( __('Bulk Coupon Creator', 'djio_wcbcc'), __('Create Bulk Coupon', 'djio_wcbcc'), 'edit_posts', 'woocommerce-bulk-cupon-creator/woocommerce-bulk-cupon-creator.php', array('WooCommerceBulkCouponCreator','bulk_coupon_add_form'));
+		add_submenu_page('woocommerce', __('Bulk Coupon Creator', 'djio_wcbcc'), __('Create Bulk Coupon', 'djio_wcbcc'), 'edit_posts', 'woocommerce-bulk-cupon-creator/woocommerce-bulk-cupon-creator.php', array('WooCommerceBulkCouponCreator','bulk_coupon_add_form'));
 	}
 	
 	// Generates a random Key
